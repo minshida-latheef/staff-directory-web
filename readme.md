@@ -6,7 +6,7 @@ A clean, responsive frontend staff directory website built with vanilla HTML, CS
 
 
 
-\[click to view](https://minshida-latheef.github.io/staff-directory-web/)
+[click to view](https://minshida-latheef.github.io/staff-directory-web/)
 
 
 
