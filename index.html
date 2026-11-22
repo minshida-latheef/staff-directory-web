@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Team | Staff Directory</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="hero">
+    <div class="container">
+      <h1>Meet Our Team</h1>
+      <p>Dedicated professionals driving innovation, design, and client success.</p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    
+    <!-- Controls: Search & Filter -->
+    <div class="controls">
+      <input 
+        type="text" 
+        id="searchInput" 
+        placeholder="Search by name or role..." 
+        aria-label="Search staff"
+      />
+      
+      <div class="filter-buttons" id="filterButtons">
+        <button class="filter-btn active" data-dept="All">All</button>
+        <button class="filter-btn" data-dept="Leadership">Leadership</button>
+        <button class="filter-btn" data-dept="Engineering">Engineering</button>
+        <button class="filter-btn" data-dept="Design">Design</button>
+        <button class="filter-btn" data-dept="Marketing">Marketing</button>
+      </div>
+    </div>
+
+    <!-- Staff Grid (Populated via JS) -->
+    <div class="staff-grid" id="staffGrid"></div>
+    <p id="noResults" class="no-results hidden">No team members found matching your search.</p>
+
+  </main>
+
+  <!-- Modal for Profile Details -->
+  <div id="staffModal" class="modal hidden" aria-hidden="true">
+    <div class="modal-content">
+      <button class="close-btn" id="closeModal" aria-label="Close modal">&times;</button>
+      <img id="modalImg" src="" alt="" class="modal-avatar" />
+      <h2 id="modalName"></h2>
+      <span id="modalDept" class="badge"></span>
+      <p id="modalRole" class="modal-role"></p>
+      <p id="modalBio" class="modal-bio"></p>
+      <a id="modalEmail" href="#" class="btn-primary">Send Email</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
